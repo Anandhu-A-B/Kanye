@@ -1,0 +1,155 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import Google Font - Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Body styling with background image */
+body {
+    font-family: 'Roboto', sans-serif; /* Apply Roboto font globally */
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    text-align: center; /* Center text alignment */
+    margin: 0;
+    padding: 0;
+}
+
+/* Semi-transparent black box (container) */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%; /* Smaller width for a centered container */
+    margin: 100px auto; /* Center horizontally and give vertical margin */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    padding: 40px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5); /* Add subtle shadow */
+}
+
+/* Navigation bar styling */
+.navbar {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    z-index: 10; /* Ensure it stays on top */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Align logo and links */
+    padding: 10px 30px; /* Add some padding around the navbar */
+}
+
+/* Logo styling */
+.navbar .logo {
+    height: 40px; /* Adjust logo size */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.navbar ul li a:hover {
+    color: #ff6600; /* Hover color */
+}
+
+/* Main title styling */
+.container h1 {
+    font-size: 48px; /* Large font size for the main title */
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+/* Larger font size for exercise names */
+h3 {
+    font-size: 28px; /* Larger size for exercise names */
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+/* Smaller labels for input fields */
+label {
+    font-size: 18px; /* Smaller size for weight and reps labels */
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+/* Styling for input fields */
+input {
+    width: 80%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    color: white; /* Text color inside input */
+}
+
+/* Button styling with fully rounded edges, white outline, minimal padding */
+button {
+    padding: 5px 10px; /* Minimal padding */
+    border: 2px solid white; /* Thin white outline */
+    background-color: transparent; /* No background color */
+    color: white;
+    border-radius: 50px; /* Fully rounded edges */
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.1); /* Slightly darker hover effect */
+    color: #ff6600; /* Text turns orange on hover */
+}
+
+/* Styling for tables (for tracking logs) */
+table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background-color: #444;
+    font-weight: 700;
+}
+
+table td {
+    background-color: #333;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
